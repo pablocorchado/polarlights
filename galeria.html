@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Auroras Boreales - Polar Lights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pronostico.html">Pronóstico</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Galería de Imágenes -->
+        <section id="gallery" class="gallery">
+            <h1>Galería</h1>
+            <div class="gallery-grid">
+                <img src="assets/images/aurora1.jpg" alt="Aurora Boreal sobre un lago" class="gallery-item">
+                <img src="assets/images/aurora2.jpg" alt="Aurora Boreal en un cielo estrellado" class="gallery-item">
+                <img src="assets/images/aurora3.jpg" alt="Aurora Boreal con reflejo en el agua" class="gallery-item">
+                <img src="assets/images/aurora4.jpg" alt="Aurora Boreal verde brillante" class="gallery-item">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Polar Lights. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico de Auroras Boreales - Polar Lights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pronostico.html">Pronóstico</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="forecast-page">
+        <h1 class="forecast-title">PRONÓSTICO AURORA BOREAL</h1>
+        
+        <div class="map-container">
+            <div id="auroraMap"></div>
+        </div>
+
+        <div class="forecast-details">
+            <h2>Pronóstico para los próximos días</h2>
+            <div class="forecast-grid" id="forecastList"></div>
+            
+            <div class="kp-index-info">
+                <h2>Índice Kp</h2>
+                <div class="kp-indicators">
+                    <div class="kp-indicator">
+                        <div class="indicator-color high"></div>
+                        <p>Alta actividad (Kp > 4)</p>
+                    </div>
+                    <div class="kp-indicator">
+                        <div class="indicator-color moderate"></div>
+                        <p>Actividad moderada (Kp 3-4)</p>
+                    </div>
+                    <div class="kp-indicator">
+                        <div class="indicator-color low"></div>
+                        <p>Baja actividad (Kp 0-2)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Polar Lights. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/forecast.js"></script>
+</body>
+</html>
+
